@@ -1,0 +1,348 @@
+html, body,#root{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.login-main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:#0a1013;
+    color: white;
+    height: 100%;
+}
+.login-container{
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+.logo-box{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.logo{
+    width: 140px
+}
+.img1{
+    height: 500px;
+    width: 500px;
+    display: block;
+    margin: 10px auto 0;
+    
+}
+.login-left{
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+    background-color: #0a1013;
+    border-right: 1px solid #333;
+}
+.login-left h1{
+    font-size: 40px;
+}
+.login-left p{
+    font-size: 48px;
+    color: #ccc;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 90px;
+    margin-left: 10px;
+}
+.login-left span{
+    display: inline-block;
+    background: linear-gradient(45deg, #f58529,red, #dd2a7b, #8134af);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.login-right{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    background-color:#1f1f22;
+}
+.top-bar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.right-btn{
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    color: #aaa;
+    margin-right: 25px;
+    
+}
+.top-bar h3{
+    margin: 0;
+    line-height: 1;
+    font-size: 18px;
+    
+}
+.mobile-header{
+    display: none;
+}
+.login-right input{
+    margin: 10px 0;
+    padding: 18px;
+    background: none;
+    border: 1px solid #555;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.login-right input:hover {
+    border: 1px solid #ffffff;  
+}
+.login-right input:focus {
+    border: 1px solid #1877f2; 
+    outline: none;               
+}
+
+.login-right input::placeholder{
+    color:white;
+}
+.login-btn:disabled{
+     margin-top: 10px;
+    padding: 13px;
+    background-color: #1877f2;   
+    border: none;
+    border-radius: 20px;
+    color:white;
+    cursor: not-allowed;
+    font-size: 16px;
+    opacity: 0.4;
+}
+.login-btn.active {
+    background-color: #1877f2;   
+    cursor: pointer;
+    opacity: 1;
+}
+.fb-btn{
+    margin-top: 20px;
+    padding: 13px;
+    background: none;
+    border: 1px solid #555;
+    color: white;
+    border-radius: 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+.fb-icon{
+    width: 30px;
+}
+.signup-btn{
+    margin-top: 10px;
+    padding: 13px;
+    background: none;
+    border: 1px solid #1877f2;
+    color: #1877f2;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.forgot{
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.meta-box{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.meta-logo{
+    width: 100px;
+    margin: 30px auto 0;
+}
+.login-footer{
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: #777;
+    word-spacing: 10px;
+    border: 1px solid #333;
+    background-color:#0a1013;
+}
+.copy{
+    word-spacing: normal;
+}
+.drop-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.drop-box select{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #777;
+    font-size: 12px;
+}
+@media (max-width: 768px) {
+    .mobile-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#0a1013;     
+        height: 130px;
+        width: 100%;
+        border-bottom: 1px solid #333;
+    }
+
+    .mobile-header img {
+        width: 140px;
+    }
+    .login-container {
+        flex-direction: column;
+    }
+
+    .login-left {
+        display: none;   
+    }
+
+    .login-right {
+        width: 100%;
+        padding:20px;
+        justify-content: flex-start;
+    }
+
+    .top-bar {
+        margin-top: 100px;
+    }
+
+    .top-bar h3 {
+        flex: 1;
+        margin-right: 10px;
+    }
+
+    .right-btn {
+        position: absolute;
+        left: 15px;
+        margin-left: 100px;
+    }
+
+    .login-right input {
+        margin-left: 80px;
+        padding: 16px;
+        width: 300px;
+        
+    }
+    .fb-btn,
+    .signup-btn {
+        width: 300px;
+        margin-left: 80px;
+    }
+    .login-btn.active{
+        width: 300px;
+        margin-left: 100px;
+    }
+    .login-btn:disabled{
+        width: 300px;
+        margin-left: 80px;
+    }
+
+
+    .meta-logo {
+        margin: 20px auto;
+    }
+
+    .login-footer {
+        font-size: 12px;
+        padding: 15px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .mobile-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#0a1013;     
+        height: 130px;
+        width: 100%;
+        border-bottom: 1px solid #333;
+    }
+
+    .mobile-header img {
+        width: 140px;
+    }
+    .login-container {
+        flex-direction: column;
+    }
+
+    .login-left {
+        display: none;  
+    }
+
+    .login-right {
+        width: 100%;
+        padding:20px;
+        justify-content: flex-start;
+    }
+
+    .top-bar {
+        margin-top: 100px;
+    }
+
+    .top-bar h3 {
+        flex: 1;
+        margin-right: 250px;
+    }
+
+    .right-btn {
+        position: absolute;
+        left: 15px;
+        margin-left: 200px;
+    }
+
+    .login-right input {
+        margin-left: 200px;
+        padding: 16px;
+        width: 550px;
+        
+    }
+    .fb-btn,
+    .signup-btn {
+        width: 550px;
+        margin-left: 200px;
+    }
+    .login-btn.active{
+        width: 600px;
+        margin-left: 200px;
+    }
+    .login-btn:disabled{
+        width: 550px;
+        margin-left: 200px;
+    }
+
+
+    .meta-logo {
+        margin: 20px auto;
+    }
+
+    .login-footer {
+        font-size: 12px;
+        padding: 16px;
+    
+    }
+}
