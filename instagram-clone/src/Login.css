@@ -239,27 +239,27 @@ body{
     .right-btn {
         position: absolute;
         left: 15px;
-        margin-left: 100px;
+        margin: 0;
     }
 
     .login-right input {
-        margin-left: 80px;
+        margin-left: 0;
         padding: 16px;
-        width: 300px;
+        width:100%;
         
     }
     .fb-btn,
     .signup-btn {
-        width: 300px;
-        margin-left: 80px;
+        width: 100%;
+        margin-left: 0;
     }
     .login-btn.active{
-        width: 300px;
-        margin-left: 100px;
+        width: 100%;
+        margin-left: 0;
     }
     .login-btn:disabled{
-        width: 300px;
-        margin-left: 80px;
+        width: 100%;
+        margin-left: 0;
     }
 
 
